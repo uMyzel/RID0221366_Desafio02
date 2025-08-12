@@ -1,0 +1,46 @@
+/* ===== RESET CSS ===== */
+
+/* Remove margens e paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove estilos de listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove sublinhado e cores padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Garante que imagens nunca ultrapassem o container */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove estilos padrões de botões e inputs */
+button, input, textarea, select {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Garante altura mínima e fonte consistente */
+html, body {
+  height: 100%;
+  font-family: "Montserrat", "Inter", sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ajusta elementos HTML5 para display block */
+article, aside, footer, header, nav, section {
+  display: block;
+}

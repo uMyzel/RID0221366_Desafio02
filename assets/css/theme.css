@@ -1,0 +1,12 @@
+/* Cores, tipografia, variações visuais. */
+
+:root{
+    --color-primary: #02A28F;
+    --color-text-primary: #000;
+    --color-text-secondary: #fff;
+    --color-text-third: #616161;
+}
+
+#hero{
+    background-color: var(--color-primary);
+}

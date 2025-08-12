@@ -1,0 +1,19 @@
+/* Estrutura de grids, colunas, espaçamentos gerais. */
+.flex{ display: flex;}
+.grid{ display: grid;}
+.container{
+    width: 83%;
+    max-width: 1600px;
+    min-width: 375px;
+}
+
+/* ESTILIZAÇÃO HEADER */
+#hero{
+    width: 100%;
+    height: 4.375rem; 
+    justify-content: center;
+    align-items: center;
+}
+
+
+
