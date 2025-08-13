@@ -1,1 +1,20 @@
 /* Botões, cards, inputs, menus. */
+
+@import url(/assets/css/theme.css);
+
+.titles__section{
+    background-color: var(--color-primary);
+    
+    border-radius: .5rem
+}
+
+.titles__section h2{
+    color: var(--color-text-secondary);
+    padding: 1rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
