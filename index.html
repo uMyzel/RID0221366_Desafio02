@@ -1,53 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Gerais -->
     <title>The Dev News</title>
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
 
 
-    <!-- metas tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilos css -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/components.css">
     <link rel="stylesheet" href="assets/css/cards.css">
 
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header pagina principal -->
-    <header id="hero" class="flex">
-        <div class="hero__logo container">
+    <header class="header flex">
+        <div class="header__logo container">
             <img src="assets/img/logo.svg" alt="Logo da The Dev News">
         </div>
     </header>
     
-    <main id="principal" class="container flex">
-        <div id="principal__news" class="#">
-             <section id="news__destaque">
-                <div class="news__overlay flex">
+    <main class="main-content container flex">
+        <div class="main-content__news">
+             <section class="highlight-news">
+                <div class="highlight-news__overlay flex">
                     <span>opinião</span>
                     <h1>Como é ser um desenvolvedor</h1>
                     <span><b>By</b> Fabio Tetsuo</span>
                 </div>
              </section>
-             <section id="news__recentes">
-                <div class="recentes__titles titles__section">
-                    <h2>Posts mais recentes</h2>
+             <section class="recent-posts">
+                <div class="section-title">
+                    <h2 class="section-title__heading">Posts mais recentes <a href="">Ver todos</a></h2>
                 </div>
-                <div class="recentes__conteudo grid">
-                    <article class="recentes__conteudo__article flex">
+                <div class="recent-posts__grid grid">
+                    <article class="post-card flex">
                         <img src="assets/img/phone-card.svg" alt="Foto de um telefone. ">
-                        <div class="recentes__conteudo__article--texts flex">
-                            <span class="article__tag">desenvolvimento</span>
+                        <div class="post-card__body flex">
+                            <span class="post-card__tag">desenvolvimento</span>
                             <h2>Desenvolvimento mobile</h2>
                             <span><b>By</b> Fabio Tetsuo</span>
                             <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
@@ -55,10 +50,10 @@
                         </div>
                     </article>
 
-                     <article class="recentes__conteudo__article flex">
+                     <article class="post-card flex">
                         <img src="assets/img/recording.svg" alt="">
-                        <div class="recentes__conteudo__article--texts flex">
-                            <span class="article__tag">saude</span>
+                        <div class="post-card__body flex">
+                            <span class="post-card__tag">saude</span>
                             <h2>Balancear vida profissional e pessoal</h2>
                             <span><b>By</b> Ridho Satriawan</span>
                             <p>Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
@@ -67,10 +62,10 @@
                     </article>
 
 
-                    <article class="recentes__conteudo__article flex">
+                    <article class="post-card flex">
                         <img src="assets/img/code.svg" alt="Imagem de um cogido mostrada em um computador.">
-                        <div class="recentes__conteudo__article--texts flex">
-                                <span class="article__tag">desenvolvimento</span>
+                        <div class="post-card__body flex">
+                                <span class="post-card__tag">desenvolvimento</span>
                                 <h2>Configurando VSCode</h2>
                                 <span><b>By</b> Fabio Tetsuo</span>
                                 <p>Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
@@ -79,10 +74,10 @@
                     </article>
 
 
-                   <article class="recentes__conteudo__article flex">
+                   <article class="post-card flex">
                     <img src="assets/img/dev.svg" alt="Imagem de um desenvolvedor Web.">
-                       <div class="recentes__conteudo__article--texts flex">
-                            <span class="article__tag">produtividade</span>
+                       <div class="post-card__body flex">
+                            <span class="post-card__tag">produtividade</span>
                             <h2>2 monitores ou 1 ultrawide?</h2>
                             <span><b>By</b> Fulano da Silva</span>
                             <p>Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
@@ -93,50 +88,50 @@
              </section>
         </div>
 
-        <aside id="principal__sidebar">
-             <div class="recentes__titles titles__section">
-                <h2>Posts populares</h2>
+        <aside class="main-content__sidebar">
+             <div class="section-title">
+                <h2 class="section-title__heading">Posts populares</h2>
             </div>
-            <div class="principal__sidebar_content">
-                <div class="sidebar_content-card">
+            <div class="popular-posts__list">
+                <article class="popular-post-card">
                     <img src="assets/img/dev-aside.svg" alt="Desenvolvedor Web trabalhando">
-                    <div class="content__card_text">
+                    <div class="popular-post-card__text">
                         <h3>Desevolvimento atual</h3>
                         <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
                     </div>
-                </div>
+                </article>
 
-                <div class="sidebar_content-card">
+                <article class="popular-post-card">
                     <img src="assets/img/gitlab.svg" alt="Logo gitlab">
-                    <div class="content__card_text">
+                    <div class="popular-post-card__text">
                         <h3>GitLab vs GitHub</h3>
                         <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
                     </div>
-                </div>
+                </article>
 
-                <div class="sidebar_content-card">
+                <article class="popular-post-card">
                     <img src="assets/img/coffe.svg" alt="Chicara de cafe">
-                    <div class="content__card_text">
+                    <div class="popular-post-card__text">
                         <h3>Café atrapalha?</h3>
                         <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
                     </div>
-                </div>
+                </article>
             </div>
 
-            <div class="recentes__titles titles__section categorias">
-                <h2>Categorias</h2>
+            <div class="section-title section-title--margin-top">
+                <h2 class="section-title__heading">Categorias</h2>
             </div>
-            <div class="categorias__links">            
-                <a href="">> saude <span>(1)</span></a>
-                <a href="">> desenvolvimento <span>(2)</span></a>
-                <a href="">> produtividade <span>(2)</span></a>
-                <a href="">> opiniao <span>(1)</span></a>
+            <div class="categories__list">            
+                <a href="" class="categories__link">> saude <span>(1)</span></a>
+                <a href="" class="categories__link">> desenvolvimento <span>(2)</span></a>
+                <a href="" class="categories__link">> produtividade <span>(2)</span></a>
+                <a href="" class="categories__link">> opiniao <span>(1)</span></a>
             </div>
 
         </aside>
     </main>
 
-    <footer id="rodape" class="flex">
+    <footer class="footer flex">
         Copyright@The Dev News
     </footer>
 

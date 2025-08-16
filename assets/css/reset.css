@@ -1,12 +1,9 @@
-/* ===== RESET CSS ===== */
-
 /* Remove margens e paddings padrão */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 /* Remove estilos de listas */
 ul, ol {
   list-style: none;
