@@ -80,7 +80,6 @@
 .recentes__conteudo__article{
     flex-direction: column;
     width: 100%;
-    max-width: 480px;
     min-width: 370px;
     padding: 1rem 0rem;
 }
@@ -106,9 +105,26 @@
 }
 
 
+.categorias{
+    margin-top: 2rem;
+}
+
+.categorias__links{
+    color: rgb(49, 46, 49);
+    padding-top: .5rem;
+}
 
 
-
+.categorias__links a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: .6rem;
+}
 
 
 #rodape{
@@ -116,4 +132,41 @@
     height: 48px;
     justify-content: center;
     align-items: center;
+}
+
+
+@media (max-width: 1150px){
+    .sidebar_content-card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .sidebar_content-card h3{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 825px){
+    #principal{
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+
+    .recentes__conteudo__article{
+        border: 1px solid red;
+    }
+
+       .sidebar_content-card{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+
+    }
+
+    .sidebar_content-card h3{
+        margin: auto ;
+    }
 }
