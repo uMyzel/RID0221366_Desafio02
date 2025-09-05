@@ -1,139 +1,107 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <title>The Dev News</title>
-    <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/theme.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/cards.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="header flex">
-        <div class="header__logo container">
-            The Dev News
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="hero">
+      <h1 class="hero__logo"><a href="index.html">The Dev News</a></h1>
     </header>
-    
-    <main class="main-content container flex">
-        <div class="main-content__news">
-             <section class="highlight-news">
-                <div class="highlight-news__overlay flex">
-                    <span>opinião</span>
-                    <h1>Como é ser um desenvolvedor</h1>
-                    <span><b>By</b> Fabio Tetsuo</span>
-                </div>
-             </section>
-             <section class="recent-posts">
-                <div class="section-title">
-                    <h2 class="section-title__heading">Posts mais recentes <a href="">Ver todos</a></h2>
-                </div>
-                <div class="recent-posts__grid grid">
-                    <article class="post-card flex">
-                        <img src="assets/img/phone-card.svg" alt="Foto de um telefone. ">
-                        <div class="post-card__body flex">
-                            <span class="post-card__tag">desenvolvimento</span>
-                            <h2>Desenvolvimento mobile</h2>
-                            <span><b>By</b> Fabio Tetsuo</span>
-                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                            <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                        </div>
-                    </article>
-
-                     <article class="post-card flex">
-                        <img src="assets/img/recording.svg" alt="">
-                        <div class="post-card__body flex">
-                            <span class="post-card__tag">saude</span>
-                            <h2>Balancear vida profissional e pessoal</h2>
-                            <span><b>By</b> Ridho Satriawan</span>
-                            <p>Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
-                            <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                        </div>
-                    </article>
-
-
-                    <article class="post-card flex">
-                        <img src="assets/img/code.svg" alt="Imagem de um cogido mostrada em um computador.">
-                        <div class="post-card__body flex">
-                                <span class="post-card__tag">desenvolvimento</span>
-                                <h2>Configurando VSCode</h2>
-                                <span><b>By</b> Fabio Tetsuo</span>
-                                <p>Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
-                                <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                            </div>
-                    </article>
-
-
-                   <article class="post-card flex">
-                    <img src="assets/img/dev.svg" alt="Imagem de um desenvolvedor Web.">
-                       <div class="post-card__body flex">
-                            <span class="post-card__tag">produtividade</span>
-                            <h2>2 monitores ou 1 ultrawide?</h2>
-                            <span><b>By</b> Fulano da Silva</span>
-                            <p>Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
-                            <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                        </div>
-                    </article>
-                </div>
-             </section>
+    <main id="main">
+      <section class="main__highlights">
+        <article>
+          <img
+            src="assets/img/city.svg"
+            alt="Foto de uma cidade, no periodo da noite, com prédios altos e luzes acesas"
+          />
+          <div class="highlight__titles">
+            <p>opinião</p>
+            <h2>Como é ser um desenvolvedor</h2>
+            <p><b>By</b> Fabio Tetsuo<</p>
+          </div>
+        </article>
+      </section>
+      <section class="main__recentes">
+        <div class="title">
+          <h2>Posts mais recentes Ver todos</h2>
+          <a href="#">Ver todos</a>
         </div>
-
-        <aside class="main-content__sidebar">
-             <div class="section-title">
-                <h2 class="section-title__heading">Posts populares</h2>
+        <div class="recentes__container">
+          <article class="recentes__articles">
+            <img src="" alt="" />
+            <div class="articles__texts">
+              <p class="articles__categoria"></p>
+              <h2 class="article__title"></h2>
+              <p class="article__author"></p>
+              <time datetime="">22 Agosto 2022</time>
             </div>
-            <div class="popular-posts__list">
-                <article class="popular-post-card">
-                    <img src="assets/img/dev-aside.svg" alt="Desenvolvedor Web trabalhando">
-                    <div class="popular-post-card__text">
-                        <h3>Desevolvimento atual</h3>
-                        <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                    </div>
-                </article>
-
-                <article class="popular-post-card">
-                    <img src="assets/img/gitlab.svg" alt="Logo gitlab">
-                    <div class="popular-post-card__text">
-                        <h3>GitLab vs GitHub</h3>
-                        <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                    </div>
-                </article>
-
-                <article class="popular-post-card">
-                    <img src="assets/img/coffe.svg" alt="Chicara de cafe">
-                    <div class="popular-post-card__text">
-                        <h3>Café atrapalha?</h3>
-                        <time datetime="2022-08-22T10:30:00">22 Agosto 2022</time>
-                    </div>
-                </article>
+          </article>
+          <article class="recentes__articles">
+            <img src="" alt="" />
+            <div class="articles__texts">
+              <p class="articles__categoria"></p>
+              <h2 class="article__title"></h2>
+              <p class="article__author"></p>
+              <time datetime="">22 Agosto 2022</time>
             </div>
-
-            <div class="section-title section-title--margin-top">
-                <h2 class="section-title__heading">Categorias</h2>
+          </article>
+          <article class="recentes__articles">
+            <img src="" alt="" />
+            <div class="articles__texts">
+              <p class="articles__categoria"></p>
+              <h2 class="article__title"></h2>
+              <p class="article__author"></p>
+              <time datetime="">22 Agosto 2022</time>
             </div>
-            <div class="categories__list">            
-                <a href="" class="categories__link">> saude <span>(1)</span></a>
-                <a href="" class="categories__link">> desenvolvimento <span>(2)</span></a>
-                <a href="" class="categories__link">> produtividade <span>(2)</span></a>
-                <a href="" class="categories__link">> opiniao <span>(1)</span></a>
+          </article>
+          <article class="recentes__articles">
+            <img src="" alt="" />
+            <div class="articles__texts">
+              <p class="articles__categoria"></p>
+              <h2 class="article__title"></h2>
+              <p class="article__author"></p>
+              <time datetime="">22 Agosto 2022</time>
             </div>
-
-        </aside>
+          </article>
+        </div>
+      </section>
     </main>
-
-    <footer class="footer flex">
-        Copyright@The Dev News
-    </footer>
-
-</body>
+    <aside id="sidebar">
+      <div class="sidebar__posts-populares">
+        <div class="title">
+          <h2>Posts populares</h2>
+        </div>
+        <div class="post-populares__content">
+          <article class="populares_card">
+            <h2 class="cards__title"></h2>
+            <time datetime="">22 Agosto 2022</time>
+          </article>
+          <article class="populares_card">
+            <h2 class="cards__title"></h2>
+            <time datetime="">22 Agosto 2022</time>
+          </article>
+          <article class="populares_card">
+            <h2 class="cards__title"></h2>
+            <time datetime="">22 Agosto 2022</time>
+          </article>
+        </div>
+        <div class="sidebar__categorias">
+          <div class="title">
+            <h2>Categorias</h2>
+          </div>
+          <div class="categorias__content">
+            <ul>
+              <li><a href="#">> Saúde</a> <span><(1)</span></li>
+              <li><a href="#">> Desenvolvimento</a> <span>(2)</span></li>
+              <li><a href="#">> Produtividade</a> <span>(2)</span></li>
+              <li><a href="#">> Opinião</a> <span>(1)</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <footer>Copyright@The Dev News</footer>
+  </body>
 </html>

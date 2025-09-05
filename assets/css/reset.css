@@ -1,43 +1,79 @@
-/* Remove margens e paddings padrão */
-* {
-  margin: 0;
-  padding: 0;
+/* reset.css */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-/* Remove estilos de listas */
-ul, ol {
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ul,
+ol {
   list-style: none;
 }
 
-/* Remove sublinhado e cores padrão de links */
-a {
-  text-decoration: none;
+/* Remove default border */
+fieldset,
+img {
+  border: 0;
+}
+
+/* Remove default background */
+body {
+  background: none;
+}
+
+/* Set base font settings */
+body {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.5;
   color: inherit;
 }
 
-/* Garante que imagens nunca ultrapassem o container */
-img {
-  max-width: 100%;
-  display: block;
+/* Remove quotes from blockquote and q */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
 }
 
-/* Remove estilos padrões de botões e inputs */
-button, input, textarea, select {
-  font: inherit;
-  background: none;
-  border: none;
-  outline: none;
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-/* Garante altura mínima e fonte consistente */
-html, body {
-  height: 100%;
-  font-family: "Montserrat", "Inter", sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Ajusta elementos HTML5 para display block */
-article, aside, footer, header, nav, section {
-  display: block;
-}
+/* Remove outline on focused elements (optional, accessibility!) */
+/* :focus {
+    outline: none;
+} */
