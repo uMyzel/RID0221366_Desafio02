@@ -1,0 +1,115 @@
+#hero{
+    background-color: var(--primary-background);
+}
+.hero__logo{
+    text-align:center ;
+    padding: 0.625rem 0 ;
+}
+.hero__logo a{
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#main, 
+#sidebar{
+    padding: 1rem .6rem;
+
+}
+
+.highlight__card{
+    position: relative;
+    width: 100%;
+    height: 24.75em;
+    border-radius: 0.625rem;
+    background-image: url(../img/city.jpg);
+    background-position: 70% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-image: linear-gradient(to bottom, rgba(102, 102, 102, 0), rgba(0, 0, 0, 1));
+}
+.highlight__titles{
+    width: 70%;
+    position: absolute;
+    bottom: 1.875rem;
+    left: 1.5rem;
+    color: var(--primary-font-color);
+    z-index: 3;
+}
+.highlight__titles h2{
+    font-weight: 700;
+    font-size: 1.5rem;  }
+
+
+.recentes__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.recentes__articles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: .625rem;
+    box-shadow:     0px 15px 20px rgba(29, 29, 29, 0.225);
+    cursor: pointer;
+}
+.recentes__articles img{
+    width: 100%;
+}
+.articles__texts{
+    padding: 1rem;
+}
+
+.article__author{
+    margin: .4rem 0;
+}
+
+.article__description{
+    margin: 0 0 .5rem 0;
+}
+
+
+.post-populares__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  
+}
+.populares_card{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+    padding: 1.25rem 1rem;
+    box-shadow:     0px 15px 20px rgba(29, 29, 29, 0.225);
+      border-radius: 0.625rem;
+
+}
+.populares_card img{
+    margin-right: 1rem;
+}
+.populares_card_container h2{
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+
+.populares_card_container time{
+    font-weight: 500;
+    font-size: 0.75rem;
+
+}

@@ -5,6 +5,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: var(--font-principal);
 }
 
 /* Remove default margin and padding */
