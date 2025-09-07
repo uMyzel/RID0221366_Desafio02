@@ -27,7 +27,7 @@
   opacity: 0.9;
 }
 
-/* Main Layout */
+
 .main {
   padding: var(--spacing-md);
 }
@@ -96,10 +96,6 @@
   font-size: 0.875rem;
   opacity: 0.9;
 }
-
-/* ============================================================================
-   POSTS GRID
-   ============================================================================ */
 
 .posts-grid {
   display: grid;
@@ -171,10 +167,6 @@
   margin-top: auto;
 }
 
-/* ============================================================================
-   POPULAR POSTS (SIDEBAR)
-   ============================================================================ */
-
 .popular-posts {
   margin-bottom: var(--spacing-xl);
 }
@@ -226,10 +218,6 @@
   color: var(--color-gray-700);
 }
 
-/* ============================================================================
-   CATEGORIES (SIDEBAR)
-   ============================================================================ */
-
 .categories__nav {
   padding: var(--spacing-sm) 0;
 }
@@ -270,10 +258,6 @@
   font-weight: 500;
 }
 
-/* ============================================================================
-   FOOTER
-   ============================================================================ */
-
 .footer {
   background-color: var(--color-primary);
   padding: var(--spacing-md) 0;
@@ -289,7 +273,6 @@
   padding: 0 var(--spacing-md);
 }
 
-/* Tablets (768px+) */
 @media (min-width: 768px) {
   .hero__card {
     height: 32rem;
@@ -305,7 +288,6 @@
   }
 }
 
-/* Small Desktop (992px+) */
 @media (min-width: 992px) {
   body {
     display: grid;
@@ -347,7 +329,7 @@
   }
 }
 
-/* Large Desktop (1200px+) */
+
 @media (min-width: 1200px) {
   .main {
     padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) 10rem;

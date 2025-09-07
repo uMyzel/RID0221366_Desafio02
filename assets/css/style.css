@@ -1,7 +1,6 @@
 @import url(./componentes.css);
 @import url(./layout.css);
 @import url(./reset.css);
-@import url(./responsive.css);
 @import url(./style.css);
 @import url(./variaveis.css);
 
@@ -14,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Typography */
 h1,
 h2,
 h3,
@@ -49,7 +47,6 @@ button:focus {
   outline-offset: 2px;
 }
 
-/* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -60,7 +57,6 @@ button:focus {
   }
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
   :root {
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);

@@ -23,5 +23,5 @@
  * Autor(es):
  * - Wesley Santos
  * 
- * Última atualização: [06/09/2025 - 07:37]
+ * Última atualização: [07/09/2025 - 07:37]
  */
