@@ -1,118 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Dev News</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-    <header id="hero">
-      <h1 class="hero__logo"><a href="index.html">The Dev News</a></h1>
-    </header>
-    <main id="main">
-      <section class="main__highlights">
-        <article class="highlight__card">
-          <div class="highlight__titles">
-            <p>opinião</p>
-            <h2>Como é ser um desenvolvedor</h2>
-            <p><b>By</b> Fabio Tetsuo<</p>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Dev News - Portal de notícias e artigos sobre desenvolvimento, tecnologia e produtividade">
+  <meta name="keywords" content="desenvolvimento, tecnologia, programação, produtividade">
+  <meta name="author" content="The Dev News">
+  <title>The Dev News - Portal de Desenvolvimento</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <h1 class="header__logo">
+        <a href="index.html" class="header__logo-link">The Dev News</a>
+      </h1>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <article class="hero__card">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__category">opinião</span>
+          <h2 class="hero__title">Como é ser um desenvolvedor</h2>
+          <p class="hero__author"><strong>Por</strong> Fabio Tetsuo</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recent Posts Section -->
+    <section class="recent-posts">
+      <header class="section-header">
+        <h2 class="section-header__title">Posts mais recentes</h2>
+        <a href="#" class="section-header__link">Ver todos</a>
+      </header>
+      
+      <div class="posts-grid">
+        <article class="post-card">
+          <img 
+            src="assets/img/phone-card.svg" 
+            alt="Ilustração de um smartphone ao lado de um cartão SD" 
+            class="post-card__image"
+          >
+          <div class="post-card__content">
+            <span class="post-card__category">desenvolvimento</span>
+            <h3 class="post-card__title">Desenvolvimento mobile</h3>
+            <p class="post-card__author"><strong>Por</strong> Fabio Tetsuo</p>
+            <p class="post-card__description">
+              Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. 
+              Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.
+            </p>
+            <time datetime="2022-08-22" class="post-card__date">22 Agosto 2022</time>
           </div>
-          <div class="overlay"></div>
         </article>
-      </section>
-      <section class="main__recentes">
-        <div class="title">
-          <h2>Posts mais recentes</h2>
-          <a href="#">Ver todos</a>
-        </div>
-        <div class="recentes__container">
-          <article class="recentes__articles">
-            <img src="assets/img/phone-card.svg" alt="Foto de um telefone ao lado de um card sd" />
-            <div class="articles__texts">
-              <p class="articles__categoria">desenvolvimento</p>
-              <h2 class="article__title">Desenvolvimento mobile</h2>
-              <p class="article__author"><b>By</b> Fabio Tetsuo</p>
-              <p class="article__description">Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>  
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-          <article class="recentes__articles">
-            <img src="assets/img/recording.svg" alt="Imagem de uma pessoa realizando uma gravação" />
-            <div class="articles__texts">
-              <p class="articles__categoria">saude</p>
-              <h2 class="article__title">Balancear vida profissional e pessoal</h2>
-              <p class="article__author"><b>By</b> Ridho Satriawan</p>
-              <p class="article__description">Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.</p>
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-          <article class="recentes__articles">
-            <img src="assets/img/code.svg" alt="Imagem de um notebook com codigo aberto" />
-            <div class="articles__texts">
-              <p class="articles__categoria">desenvolvimento</p>
-              <h2 class="article__title">Configurando VSCode</h2>
-              <p class="article__author"><b>By</b> Fabio Tetsuo</p>
-              <p class="article__description">Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. Tellus vitae arcu dignissim massa aliquam vel tellus. Ipsum massa arcu nulla sed purus in ac.</p>
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-          <article class="recentes__articles">
-            <img src="assets/img/dev.svg" alt="Foto de um programador" />
-            <div class="articles__texts">
-              <p class="articles__categoria">produtividade</p>
-              <h2 class="article__title">2 monitores ou 1 ultrawide?</h2>
-              <p class="article__author"><b>By</b> Fulano da Silva</p>
-              <p class="article__description">Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. Eget molestie posuere enim pretium venenatis nunc ligula donec a. Velit senectus amet nulla.</p>
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-    <aside id="sidebar">
-      <div class="sidebar__posts-populares">
-        <div class="title">
-          <h2>Posts populares</h2>
-        </div>
-        <div class="post-populares__content">
-          <article class="populares_card">
-            <img src="assets/img/dev-aside.svg" alt="">
-            <div class="populares_card_container">
-                <h2 class="cards__title">Desevolvimento atual</h2>
-                <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-          <article class="populares_card">
-            <img src="assets/img/gitlab.svg" alt="">
-            <div class="populares_card_container">
-              <h2 class="cards__title">GitLab vs GitHub</h2>
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-          <article class="populares_card">
-            <img src="assets/img/coffe.svg" alt="">
-            <div class="populares_card_container">
-              <h2 class="cards__title">Café atrapalha?</h2>
-              <time datetime="">22 Agosto 2022</time>
-            </div>
-          </article>
-        </div>
-        <div class="sidebar__categorias">
-          <div class="title">
-            <h2>Categorias</h2>
+
+        <article class="post-card">
+          <img 
+            src="assets/img/recording.svg" 
+            alt="Ilustração de uma pessoa realizando uma gravação" 
+            class="post-card__image"
+          >
+          <div class="post-card__content">
+            <span class="post-card__category">saúde</span>
+            <h3 class="post-card__title">Balancear vida profissional e pessoal</h3>
+            <p class="post-card__author"><strong>Por</strong> Ridho Satriawan</p>
+            <p class="post-card__description">
+              Lorem ipsum dolor sit amet consectetur. Et consectetur at consectetur sed nisl tempor.
+            </p>
+            <time datetime="2022-08-22" class="post-card__date">22 Agosto 2022</time>
           </div>
-          <div class="categorias__content">
-            <ul>
-              <li><a href="#">> Saúde</a> <span>(1)</span></li>
-              <li><a href="#">> Desenvolvimento</a> <span>(2)</span></li>
-              <li><a href="#">> Produtividade</a> <span>(2)</span></li>
-              <li><a href="#">> Opinião</a> <span>(1)</span></li>
-            </ul>
+        </article>
+
+        <article class="post-card">
+          <img 
+            src="assets/img/code.svg" 
+            alt="Ilustração de um notebook com código aberto" 
+            class="post-card__image"
+          >
+          <div class="post-card__content">
+            <span class="post-card__category">desenvolvimento</span>
+            <h3 class="post-card__title">Configurando VSCode</h3>
+            <p class="post-card__author"><strong>Por</strong> Fabio Tetsuo</p>
+            <p class="post-card__description">
+              Lorem ipsum dolor sit amet consectetur. Erat interdum tortor ac sagittis id a etiam. 
+              Tellus vitae arcu dignissim massa aliquam vel tellus.
+            </p>
+            <time datetime="2022-08-22" class="post-card__date">22 Agosto 2022</time>
           </div>
-        </div>
+        </article>
+
+        <article class="post-card">
+          <img 
+            src="assets/img/dev.svg" 
+            alt="Ilustração de um programador trabalhando" 
+            class="post-card__image"
+          >
+          <div class="post-card__content">
+            <span class="post-card__category">produtividade</span>
+            <h3 class="post-card__title">2 monitores ou 1 ultrawide?</h3>
+            <p class="post-card__author"><strong>Por</strong> Fulano da Silva</p>
+            <p class="post-card__description">
+              Lorem ipsum dolor sit amet consectetur. Arcu tellus adipiscing sagittis tristique. 
+              Eget molestie posuere enim pretium venenatis nunc.
+            </p>
+            <time datetime="2022-08-22" class="post-card__date">22 Agosto 2022</time>
+          </div>
+        </article>
       </div>
-    </aside>
-    <footer>Copyright@The Dev News</footer>
-  </body>
+    </section>
+  </main>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <!-- Popular Posts -->
+    <section class="popular-posts">
+      <header class="section-header">
+        <h2 class="section-header__title">Posts populares</h2>
+      </header>
+      
+      <div class="popular-posts__list">
+        <article class="popular-card">
+          <img 
+            src="assets/img/dev-aside.svg" 
+            alt="Ícone de desenvolvimento" 
+            class="popular-card__image"
+          >
+          <div class="popular-card__content">
+            <h3 class="popular-card__title">Desenvolvimento atual</h3>
+            <time datetime="2022-08-22" class="popular-card__date">22 Agosto 2022</time>
+          </div>
+        </article>
+
+        <article class="popular-card">
+          <img 
+            src="assets/img/gitlab.svg" 
+            alt="Logo do GitLab" 
+            class="popular-card__image"
+          >
+          <div class="popular-card__content">
+            <h3 class="popular-card__title">GitLab vs GitHub</h3>
+            <time datetime="2022-08-22" class="popular-card__date">22 Agosto 2022</time>
+          </div>
+        </article>
+
+        <article class="popular-card">
+          <img 
+            src="assets/img/coffe.svg" 
+            alt="Ícone de xícara de café" 
+            class="popular-card__image"
+          >
+          <div class="popular-card__content">
+            <h3 class="popular-card__title">Café atrapalha?</h3>
+            <time datetime="2022-08-22" class="popular-card__date">22 Agosto 2022</time>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <header class="section-header">
+        <h2 class="section-header__title">Categorias</h2>
+      </header>
+      
+      <nav class="categories__nav">
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="#" class="categories__link">> Saúde</a>
+            <span class="categories__count">(1)</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">> Desenvolvimento</a>
+            <span class="categories__count">(2)</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">> Produtividade</a>
+            <span class="categories__count">(2)</span>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">> Opinião</a>
+            <span class="categories__count">(1)</span>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </aside>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">&copy; 2024 The Dev News. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
 </html>

@@ -1,10 +1,50 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap");
 
 :root {
-  --font-principal: "Montserrat", sans-serif;
-  --font-secundaria: "Cabin", sans-serif;
-  --primary-background: rgba(2, 162, 143, 1);
-  --primary-font-color: rgba(255, 255, 255, 1);
-  --secondary-font-color: rgb(97, 97, 97);
+  /* Typography */
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Cabin", sans-serif;
+  
+  /* Colors */
+  --color-primary: #02a28f;
+  --color-primary-dark: #028b7a;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-100: #f9f9f9;
+  --color-gray-200: #eeeeee;
+  --color-gray-300: #d1d1d1;
+  --color-gray-700: #616161;
+  --color-gray-900: #1d1d1d;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  
+  /* Border radius */
+  --radius-sm: 0.375rem;   /* 6px */
+  --radius-md: 0.625rem;   /* 10px */
+  --radius-lg: 1rem;       /* 16px */
+  --radius-xl: 2rem;       /* 32px */
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(29, 29, 29, 0.1);
+  --shadow-md: 0 4px 8px rgba(29, 29, 29, 0.12);
+  --shadow-lg: 0 8px 16px rgba(29, 29, 29, 0.15);
+  --shadow-xl: 0 15px 20px rgba(29, 29, 29, 0.225);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --sidebar-width: 33.333%;
+  --main-width: 66.667%;
 }
